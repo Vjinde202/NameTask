@@ -1,0 +1,14 @@
+Enter Name:<input type="text" #name/>
+<button (click)="doAction(name.value)">go</button>
+<hr>
+
+<br>
+possible country<br><br>
+
+{{allInfo.name}}
+<table>
+  <tr *ngFor="let x of allInfo.country">
+    <td>Country code{{x.country_id}}</td>
+    <td>probability{{x.probability}}</td>
+  </tr>
+</table>
